@@ -7,6 +7,6 @@ phases:
 
   post_build:
     commands:
-      - eval `aws ecr get-login --region us-east-1`
-      - docker tag ml-test-repo:latest 125188297908.dkr.ecr.us-east-2.amazonaws.com/ml-test-repo:latest
-      - docker push 125188297908.dkr.ecr.us-east-1.amazonaws.com/ml-test-repo:latest
+      - eval `aws ecr get-login --region us-east-2a`
+      - docker tag ml-test-repo:latest 125188297908.dkr.ecr.us-east-2a.amazonaws.com/ml-test-repo:latest
+      - docker push 125188297908.dkr.ecr.us-east-2a.amazonaws.com/ml-test-repo:latest
