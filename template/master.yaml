@@ -29,7 +29,7 @@ Resources:
         Properties:
             TemplateURL:  https://s3.amazonaws.com/mxnet-template-cicd-feb27/ecs-template.yaml
             Parameters:
-                InstanceType: c4.8xlarge
+                InstanceType: t2.micro
                 VpcId: !GetAtt VPC.Outputs.VPC
                 SubnetID: !GetAtt VPC.Outputs.PublicSubnets
 
